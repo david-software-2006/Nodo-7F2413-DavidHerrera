@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    } 
+
+    .contact h2 {
+        margin-bottom: 3rem;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    span {
+        color: rgb(0, 255, 98);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .contact form {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .contact form .input-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: #fff;
+        background: #323946;
+        border-radius: .8rem;
+        margin: .7rem 0;
+    }
+
+    .contact form .input-box input {
+        width: 49%;
+    }
+
+    .contact form textarea {
+        resize: none;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background: rgb(0, 255, 98);
+        border-radius: 4rem;
+        box-shadow: 0 0 1rem rgb(0, 255, 98);
+        font-size: 1.6rem;
+        color: #323946;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        transition: .5s ease;
+    }
+
+    .btn:hover {
+        box-shadow: none;
+    }
+
+    .contact form .btn {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background: #000000;
+        color: #fff;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+    }
+</style>
+
+<body>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contáctame <span>!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+</body>
+
+</html>
