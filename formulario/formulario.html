@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="David" content="Soy el creador de este formulario">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <meta name="descripción" content="Ésta página web, está basada el desarrollo de un formulario de ingreso a NODO">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="form-box l">
+            <h1>INGRESO A <strong>NODO</strong></h1>
+            <form action="" method="post">
+
+                <div class="input-box">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+
+
+                <select name="departamento" id="departamento">
+                    <optgroup label="A">
+                        <option value="escoge">Elige tu departamento</option>
+                        <option value="Antioquía">Antioquía</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Amazonas">Amazonas</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="B">
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Bolivar">Bolivar</option>
+                        <option value="Boyacá">Boyacá</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="C">
+                        <option value="Cauca">Cauca</option>
+                        <option value="Casanáre">Casanáre</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="G">
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="La Guajira">La Guajira</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="H">
+                        <option value="Huila">Huila</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="M">
+                        <option value="Meta">Meta</option>
+                        <option value="Magdalena">Magdalena</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="N">
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Nariño">Nariño</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="O">
+                        <option value="Orinoquía">Orinoquía</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="P">
+                        <option value="Putumayo">Putumayo</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="Q">
+                        <option value="Quindío">Quindío</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="R">
+                        <option value="Risaralda">Risaralda</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="S">
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="San Andres y Providencia">San Andres y Providencia</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="U">
+                        <option value="Uarbá">Uarbá</option>
+                    </optgroup>
+                    <hr>
+                    <optgroup label="V">
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                    </optgroup>
+
+                </select> <br>
+
+                <div class="unput-box">
+                    <label for="Pais">País</label>
+                    <input type="" name="pais" id="pais" required>
+                </div>
+
+                <textarea name="direccion" id="direccion" cols="35" rows="10" placeholder="Ingresa tu dirección aquí">
+            </textarea>
+
+            <input type="submit" value="Ingresar" class="btn">
+            </form>
+        </div>
+    
+
+    
+        <div class="form-box r">
+
+            <form action="">
+
+                <div class="input-box">
+                    <label for="telefono">Telefono</label>
+                    <input class="alert alert-info" type="tel" name="telefono" id="phone"><br><br>
+                </div>
+
+                <textarea name="descripción" id="descripción" cols="30" rows="4" maxlength="300"
+                    placeholder="Ingresa aquí una breve descripción personal"></textarea><br>
+
+                <h5>¿A QUÉ CARRERA DESEAS INCRIBIRTE?</h5>
+                <input type="checkbox" name="jobs" id="jobs">
+                <label for="JOBS">JOBS TO BE DONE</label><br>
+
+
+                <input type="checkbox" name="cloud" id="cloud" required>
+                <label for="CLOUD">CLOUD NATIVE</label><br>
+
+
+                <input type="checkbox" name="frontend" id="frontend">
+                <label for="FRONTEND">FRONTEND</label><br>
+
+
+                <input type="checkbox" name="backend" id="backend">
+                <label for="BACKEND">BACKEND</label><br>
+
+                <input type="checkbox" name="fundamentals" id="fundamentals">
+                <label for="FUNDAMENTALS">FUNDAMENTALS</label><br>
+
+                <input type="checkbox" name="phyton" id="phyton">
+                <label for="phyton">PHYTON</label><br>
+
+                <input type="checkbox" name="marketing" id="marketing">
+                <label for="marketing">MARKETING DIGITAL</label>
+
+                <h5>ELIGE TU MODALIDAD</h5>
+
+                <input type="radio" name="presencial" id="presencial" required>
+                <label for="presencial">PRESENCIAL</label><br>
+
+                <input type="radio" name="virtual" id="virtual">
+                <label for="virtual">VIRTUAL</label>
+
+                <h5>¿ESTÁS TRABAJANDO?</h5>
+                <input type="radio" name="si" id="si">
+                <label for="si">Si</label>
+
+                <input type="radio" name="no" id="no">
+                <label for="no">No</label>
+
+                <input type="reset" value="Borrar todo" class="btn">
+            </form>
+        </div>
+    </div>
+
+    
+    
+
+</body>
+
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    function getIp(callback) {
+        fetch('https://ipinfo.io/json?token=<your token>', { headers: { 'Accept': 'application/json' } })
+            .then((resp) => resp.json())
+            .catch(() => {
+                return {
+                    country: 'us',
+                };
+            })
+            .then((resp) => callback(resp.country));
+
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["us", "co", "in", "de", "ni"],
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    }
+
+
+
+</script>
+
+</html>
